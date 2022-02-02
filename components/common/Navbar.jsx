@@ -22,7 +22,7 @@ const Navbar = () => {
           variants={variants}
           initial="initial"
           animate="animate"
-          className="absolute z-30 px-12 py-2"
+          className="absolute z-30 px-3 lg:px-12 py-3 lg:py-2"
         >
           <Image
             src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thbb-logo_lxSkWfFuN8.png"

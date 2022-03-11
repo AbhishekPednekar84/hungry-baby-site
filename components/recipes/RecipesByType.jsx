@@ -82,7 +82,7 @@ const RecipesByType = ({ mealType, tagType }) => {
 
       {loadedRecipes && loadedRecipes.length === 0 && (
         <div className="mt-20 text-center text-2xl text-gray-600">
-          <p>Nope, nothing here!</p>
+          <p>Something utterly utterly delicious will be here soon!</p>
         </div>
       )}
 

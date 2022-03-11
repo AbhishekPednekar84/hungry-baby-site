@@ -19,7 +19,7 @@ const LatestRecipes = ({ posts }) => {
 
         {posts.length === 0 && (
           <div className="flex items-center justify-center">
-            <p className="mx-5 text-xl text-gray-800">
+            <p className="mx-5 text-2xl text-gray-600">
               Something utterly utterly delicious will be here soon!
             </p>
           </div>

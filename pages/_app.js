@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "../styles/globals.css";
 import smoothscroll from "smoothscroll-polyfill";
 import { motion } from "framer-motion";
+import RecipeState from "@/context/RecipeState";
 
 const pageVariants = {
   pageInitial: {
@@ -26,7 +27,9 @@ function MyApp({ Component, pageProps, router }) {
       initial="pageInitial"
       animate="pageAnimate"
     >
-      <Component {...pageProps} />
+      <RecipeState>
+        <Component {...pageProps} />
+      </RecipeState>
     </motion.div>
   );
 }

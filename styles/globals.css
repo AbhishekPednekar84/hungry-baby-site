@@ -2,11 +2,226 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --scrollbar-track: #fce7f3;
+  --scrollbar-thumb: #db2777;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+  border-radius: 100vw;
+  margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 100vw;
+  border: 0.25rem solid var(--scrollbar-track);
+}
+
+.horizontal-scrollbar::-webkit-scrollbar-thumb {
+  max-width: 10px;
+}
+
 @layer base {
+  ::selection {
+    @apply bg-rose-100 text-black;
+  }
   h1 {
-    @apply text-4xl lg:text-5xl font-extrabold leading-normal;
+    @apply text-4xl font-extrabold leading-normal lg:text-5xl;
+  }
+  h2 {
+    @apply text-3xl font-bold leading-normal lg:text-4xl;
+  }
+  h3 {
+    @apply text-2xl font-bold;
   }
 }
 
 @layer components {
+  .primary-button {
+    @apply cursor-pointer rounded-lg bg-brandColor text-xl font-bold uppercase text-white transition-colors duration-200 ease-in-out hover:bg-pink-800;
+  }
+  .card-container {
+    @apply m-auto mx-5 flex h-[600px] max-w-[100%] snap-x scroll-px-10 overflow-x-scroll bg-gradient-to-b from-zinc-100 via-slate-50 to-white py-0 px-[60px];
+  }
+  .card-container > * {
+    @apply snap-start lg:snap-align-none;
+  }
+  .card {
+    @apply relative top-[50px] left-0 flex h-[475px] min-w-[350px] flex-col rounded-3xl bg-white shadow-latestRecipeCard transition duration-300 ease-out lg:max-w-[350px];
+  }
+  .heading-container {
+    @apply mb-12 flex justify-center;
+  }
+  .heading-underline {
+    @apply h-2 w-14 rounded-md bg-brandColor;
+  }
+  .nav-link {
+    @apply max-w-max cursor-pointer text-lg font-bold uppercase tracking-wide text-brandColor decoration-brandColor decoration-2 underline-offset-8 hover:underline;
+  }
+  .image-hover-scale {
+    @apply transition duration-200 ease-in-out hover:scale-105;
+  }
+  .remove-default-focus {
+    @apply border-transparent focus-within:outline-none focus:border-pink-600 focus:border-t-transparent focus:border-r-transparent focus:border-l-transparent focus:ring-0;
+  }
+  .hover-link {
+    @apply hover:underline hover:decoration-black hover:decoration-2 hover:underline-offset-4;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry {
+      column-gap: 1.5em;
+      column-count: 1;
+    }
+    .masonry-sm {
+      column-gap: 1.5em;
+      column-count: 2;
+    }
+    .masonry-md {
+      column-gap: 1.5em;
+      column-count: 3;
+    }
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+}
+
+/* .container {
+  height: 600px;
+  max-width: 100%;
+  display: flex;
+  margin: auto auto;
+  background-color: white;
+  overflow-x: scroll;
+  padding: 0px 60px;
+  background-color: #f8fafc;
+} */
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  min-width: 350px;
+  background-color: white;
+  border-radius: 24px;
+  box-shadow: -1rem 0 2rem rgb(41, 40, 40);
+  transition: 0.4s ease-out;
+  position: relative;
+  top: 50px;
+  left: 0px;
+  padding: 15px;
+} */
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px) translateX(-5px) rotate(0.2deg);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 60px;
+  transition: 0.4s ease-out;
+}
+
+.waves-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 65px;
+}
+
+.waves-top .shape-fill {
+  fill: #ffffff;
+}
+
+/* Footer curve */
+.footer-curve {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.footer-curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 76px;
+}
+
+.footer-curve .shape-fill {
+  fill: #ffffff;
+}
+
+/* Tilt top - about */
+.tilt-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tilt-top svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 47px;
+}
+
+.tilt-top .shape-fill {
+  fill: #ffffff;
+}
+
+/* Tile bottom - about */
+.tilt-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.tilt-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 44px;
+  transform: rotateY(180deg);
+}
+
+.tilt-bottom .shape-fill {
+  fill: #ffffff;
 }

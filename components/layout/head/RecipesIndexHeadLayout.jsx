@@ -2,19 +2,19 @@ import Head from "next/head";
 import { Fragment } from "react";
 import CommonHeadLayout from "./CommonHeadLayout";
 
-const HomeHeadLayout = (props) => {
+const RecipesIndexHeadLayout = (props) => {
   return (
     <Fragment>
       <CommonHeadLayout />
       <Head>
-        <title>Recipes for Toddlers & Beyond</title>
+        <title>Check Out Our Recipe Index</title>
         <meta
           name="description"
           content="Meal ideas for toddlers and beyond. Make mealtime fun with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. While a lot of the posts focus on Indian recipes for toddlers, you will also find a whole bunch of easy and fun meal ideas that you can try no matter where you are."
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Recipe Ideas for Toddlers" />
+        <meta property="og:title" content="Yummy Recipes for Toddlers" />
         <meta
           property="og:description"
           content="Meal ideas for toddlers and beyond. Make mealtime fun with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. While a lot of the posts focus on Indian recipes for toddlers, you will also find a whole bunch of easy and fun meal ideas that you can try no matter where you are."
@@ -45,4 +45,4 @@ const HomeHeadLayout = (props) => {
   );
 };
 
-export default HomeHeadLayout;
+export default RecipesIndexHeadLayout;

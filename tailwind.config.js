@@ -5,6 +5,15 @@ module.exports = {
       fontFamily: {
         sans: ["Nunito", "sans-serif"],
       },
+      colors: {
+        brandColor: "#DB2777",
+      },
+      boxShadow: {
+        latestRecipeCard: "-1rem 0 2rem rgb(41, 40, 40)",
+      },
+      textDecorationThickness: {
+        6: "6px",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ["ik.imagekit.io"],
+    domains: ["ik.imagekit.io", "images.unsplash.com", "static.ghost.org"],
   },
   async headers() {
     return [

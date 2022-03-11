@@ -15,6 +15,9 @@ const FullRecipeHeadLayout = ({ children, recipe }) => {
         <meta property="og:description" content={`${recipe.excerpt}`} />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />
+        <meta property="og:image" content={recipe.featured_image} />
+        <meta property="og:image:width" content="256" />
+        <meta property="og:image:height" content="256" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

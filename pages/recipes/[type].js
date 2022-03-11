@@ -12,7 +12,7 @@ const RecipeType = ({ mealType }) => {
   return (
     <MealTypeHeadLayout mealType={mealType}>
       <Layout>
-        <CategoryHeading heading={mealType + " Recipes"} />
+        <CategoryHeading heading={mealType} />
         <RecipesByType mealType={mealType} tagType="secondary" />
       </Layout>
     </MealTypeHeadLayout>

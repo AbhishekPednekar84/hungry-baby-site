@@ -47,7 +47,7 @@ const Navbar = () => {
                 className="absolute top-2 left-2"
               >
                 <Image
-                  src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thbb-logo_lxSkWfFuN8.png"
+                  src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/Logo_UUDYpbJVV.svg"
                   alt="The Hungry Baby Blog Logo"
                   width={200}
                   height={100}
@@ -151,7 +151,7 @@ const Navbar = () => {
       </div>
 
       {!showMenu && (
-        <div className="absolute top-8 right-4 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-pink-50 bg-opacity-50 p-2 shadow-xl md:hidden">
+        <div className="absolute top-8 right-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-pink-50 p-2 shadow-xl md:hidden">
           <span onClick={() => setShowMenu(true)}>{menuIcon}</span>
         </div>
       )}
@@ -164,7 +164,7 @@ const Navbar = () => {
               initial="initialNav"
               animate="animateNav"
               exit="exitNav"
-              className="from fixed top-0 right-0 z-30 h-screen w-2/3 bg-zinc-200 bg-gradient-to-b via-slate-100 to-gray-50 px-5 py-10 shadow-2xl md:hidden"
+              className="from fixed top-0 right-0 h-screen w-2/3 bg-zinc-200 bg-gradient-to-b via-slate-100 to-gray-50 px-5 py-10 shadow-2xl md:hidden"
             >
               <div>
                 <div className="flex items-center justify-end pr-5">
@@ -173,7 +173,7 @@ const Navbar = () => {
                     className="menu-icon -mt-2 -mr-5 bg-slate-700"
                     onClick={() => setShowMenu(false)}
                   >
-                    <span className="absolute top-8 right-4 flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-pink-50 bg-opacity-50 p-2 shadow-xl">
+                    <span className="absolute top-8 right-4 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-pink-50 bg-opacity-50 p-2 shadow-xl">
                       {cancelIcon}
                     </span>
                   </div>
@@ -184,7 +184,7 @@ const Navbar = () => {
                 <Link href="/">
                   <a>
                     <Image
-                      src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thubb-icon_zoCbYRVTO.png"
+                      src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/Logo_UUDYpbJVV.svg"
                       alt="Logo"
                       width={150}
                       height={85}

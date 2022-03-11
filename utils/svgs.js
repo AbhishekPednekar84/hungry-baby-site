@@ -75,7 +75,7 @@ export const chefHatIcon = (
 
 export const menuIcon = (
   <svg
-    className="h-6 w-6"
+    className="h-10 w-10"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -84,7 +84,7 @@ export const menuIcon = (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="3"
+      strokeWidth="2"
       d="M4 8h16M4 16h16"
     ></path>
   </svg>
@@ -92,7 +92,7 @@ export const menuIcon = (
 
 export const cancelIcon = (
   <svg
-    className="h-6 w-6"
+    className="h-10 w-10"
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
@@ -170,6 +170,21 @@ export const arrowUpIcon = (
       stroke-linejoin="round"
       stroke-width="3"
       d="M5 11l7-7 7 7M5 19l7-7 7 7"
+    ></path>
+  </svg>
+);
+
+export const heartIcon = (
+  <svg
+    class="h-6 w-6"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+      clip-rule="evenodd"
     ></path>
   </svg>
 );

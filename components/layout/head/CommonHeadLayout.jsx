@@ -115,14 +115,6 @@ const CommonHeadLayout = () => {
         content="/ms-icon-310x310.png"
       ></meta>
       <meta name="theme-color" content="#DB2777" />
-
-      <meta
-        property="og:image"
-        content="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thubb-icon_zoCbYRVTO.png"
-      />
-      <meta property="og:image:width" content="256" />
-      <meta property="og:image:height" content="256" />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:description"

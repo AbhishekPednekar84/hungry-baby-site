@@ -12,14 +12,14 @@ const About = () => {
         <div className="py-36">
           <div className="heading-container">
             <div className="max-w-max">
-              <h1 className="pb-2 text-center text-5xl">We are Team HuBB</h1>
+              <h1 className="pb-2 text-center text-5xl">Team HuBB</h1>
               <div className="heading-underline"></div>
             </div>
           </div>
 
           <div className="flex justify-center">
             <div className="">
-              <div className="flex flex-col gap-5 px-10 py-10 lg:flex-row lg:justify-between lg:px-52">
+              <div className="flex flex-col gap-5 px-5 py-10 md:px-10 lg:flex-row lg:justify-between lg:px-52">
                 <div className="relative mb-5 h-[400px] w-full lg:mb-0 lg:min-w-[250px]">
                   <Image
                     src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/Team_HuBB_n0SpVzP95.jpeg"
@@ -33,7 +33,7 @@ const About = () => {
                     className="image-hover-scale"
                   />
                 </div>
-                <div className="px-5">
+                <div className="md:px-5">
                   <p className="text-lg first-letter:float-left first-letter:mr-3 first-letter:text-7xl first-letter:font-bold">
                     Hey there, we are Aparna and Abhishek a.k.a{" "}
                     <span className="font-bold text-brandColor">Team HuBB</span>
@@ -61,7 +61,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="relative mt-10 bg-gradient-to-r from-pink-700 via-pink-600 to-pink-500 px-10 py-16 text-white lg:px-52">
+              <div className="relative mt-10 bg-gradient-to-r from-pink-700 via-pink-600 to-pink-500 px-5 py-16 text-white md:px-10 lg:px-52">
                 <Tilt>
                   <h2 className="mb-5 font-bold">The early days</h2>
                   <p className="text-lg">
@@ -110,7 +110,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="relative mt-10 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 px-10 py-16 text-white lg:px-52">
+              <div className="relative mt-10 bg-gradient-to-r from-pink-500 via-pink-600 to-pink-700 px-5 py-16 text-white md:px-10 lg:px-52">
                 <Tilt>
                   <h2 className="mb-5 font-bold">Not stressing over sugar</h2>
                   <p className="text-lg">
@@ -124,7 +124,7 @@ const About = () => {
                 </Tilt>
               </div>
 
-              <div className="mt-10 px-10 py-10 lg:px-52">
+              <div className="mt-10 px-5 py-10 md:px-10 lg:px-52">
                 <h2 className="mb-5 font-bold">
                   A drama-free mealtime (well mostly...)
                 </h2>
@@ -157,7 +157,7 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="relative mt-10 -mb-16 bg-gradient-to-r from-pink-700 via-pink-600 to-pink-500 px-10 py-16 text-white lg:px-52">
+              <div className="relative mt-10 -mb-16 bg-gradient-to-r from-pink-700 via-pink-600 to-pink-500 px-5 py-16 text-white md:px-10 lg:px-52">
                 <Tilt>
                   <p className="text-xl">
                     If you are still here, we would like to thank you for

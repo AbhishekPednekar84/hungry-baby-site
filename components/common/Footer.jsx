@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { heartIcon } from "@/utils/svgs";
 
 const Footer = () => {
   return (
-    <div className="relative bg-gradient-to-b from-pink-50 via-pink-300 to-pink-400 pb-20 print:hidden">
+    <div className="relative bg-gradient-to-b from-pink-50 via-pink-100 to-pink-300 pb-20 print:hidden">
       <div className="footer-curve">
         <svg
           data-name="Layer 1"
@@ -22,7 +23,7 @@ const Footer = () => {
       <div className="flex flex-col items-center">
         <div className="mt-28">
           <Image
-            src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thbb-logo_lxSkWfFuN8.png"
+            src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/Logo_UUDYpbJVV.svg"
             alt="The Hungry Baby Blog Logo"
             width={200}
             height={100}
@@ -36,7 +37,9 @@ const Footer = () => {
 
         <div className="mt-12 flex flex-col items-center justify-center gap-y-16 lg:w-[600px] lg:flex-row lg:items-start lg:justify-between lg:gap-16">
           <div>
-            <h3 className="mb-7 text-center text-3xl">Recipes</h3>
+            <h3 className="mb-7 text-center text-3xl font-extrabold">
+              Recipes
+            </h3>
             <div className="grid grid-cols-2 gap-x-10 gap-y-7">
               <Link href="/recipes/all">
                 <a className="hover-link text-lg font-bold">All Recipes</a>
@@ -60,13 +63,32 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-7 text-center text-3xl">Quick Links</h3>
+            <h3 className="mb-7 text-center text-3xl font-extrabold">
+              Quick Links
+            </h3>
             <div className="grid grid-cols-1 place-items-center gap-x-10 gap-y-7">
               <Link href="/about">
                 <a className="hover-link text-lg font-bold">Team HuBB</a>
               </Link>
             </div>
           </div>
+
+          <p className="flex items-center text-lg font-semibold">
+            Made with{" "}
+            <svg
+              class="h-6 w-6"
+              fill="#DB2777"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>{" "}
+            for all the lil' ones :)
+          </p>
         </div>
       </div>
     </div>

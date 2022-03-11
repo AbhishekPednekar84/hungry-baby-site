@@ -21,16 +21,16 @@ const FullRecipe = ({ recipe }) => {
       <div
         itemScope
         itemType="https://schema.org/Recipe"
-        className="flex items-start justify-center px-5"
+        className="mx-5 flex items-start justify-center"
       >
-        <article className="mb-20 max-w-[700px]">
+        <article className="mx-2 mb-20 max-w-[700px]">
           <Breadcrumb primaryTag={recipe.primary_tag} />
-          <h1 itemProp="name" className="mb-10">
+          <h1 itemProp="name" className="mb-10 text-center">
             {recipe.title}
           </h1>
 
           <div className="relative mb-5">
-            <span className="absolute -top-4 -left-4 -z-10">{quotesIcon}</span>
+            <span className="absolute -top-4 -left-3 -z-10">{quotesIcon}</span>
             <p
               itemProp="description"
               className="first-letter:float-left first-letter:mx-2 first-letter:text-6xl first-letter:font-bold"
@@ -50,7 +50,7 @@ const FullRecipe = ({ recipe }) => {
           <div className="flex flex-col justify-between md:flex-row">
             <div
               itemProp="image"
-              className="relative h-[350px] w-full overflow-hidden rounded-xl md:w-2/3"
+              className="relative h-[300px] w-full overflow-hidden rounded-xl md:w-2/3"
             >
               <Image
                 src={recipe.featured_image}
@@ -93,7 +93,7 @@ const FullRecipe = ({ recipe }) => {
             </div>
           </div>
 
-          <hr className="my-10 mx-10 border-2 border-pink-200" />
+          <hr className="my-10 mx-10 border-2 border-brandColor" />
 
           <div>
             <h2 className="mb-5">Ingredients</h2>
@@ -113,7 +113,7 @@ const FullRecipe = ({ recipe }) => {
             </ul>
           </div>
 
-          <hr className="my-10 mx-10 border-2 border-pink-200" />
+          <hr className="my-10 mx-10 border-2 border-brandColor" />
 
           <div>
             <h2 className="mb-5">Directions</h2>
@@ -133,7 +133,7 @@ const FullRecipe = ({ recipe }) => {
 
           {recipe.notes && (
             <div className="print:hidden">
-              <hr className="my-10 mx-10 border-2 border-pink-200" />
+              <hr className="my-10 mx-10 border-2 border-brandColor" />
               <div>
                 <h2 className="mb-5">Notes</h2>
 
@@ -142,7 +142,7 @@ const FullRecipe = ({ recipe }) => {
             </div>
           )}
 
-          <hr className="my-10 mx-10 border-2 border-pink-200 print:hidden" />
+          <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
           {recipe.nutritional_value && (
             <NutritionalValue nutritionalValue={recipe.nutritional_value} />

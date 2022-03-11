@@ -33,6 +33,13 @@ const PrimaryTagHeadLayout = ({ children, mainTag }) => {
         />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />
+
+        <meta
+          property="og:image"
+          content="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/thubb-icon_zoCbYRVTO.png"
+        />
+        <meta property="og:image:width" content="256" />
+        <meta property="og:image:height" content="256" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

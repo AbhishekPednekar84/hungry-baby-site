@@ -8,7 +8,7 @@ const RecipeIndex = () => {
     <div className="mx-5 mb-20 pt-36">
       <div className="heading-container">
         <div className="max-w-max">
-          <h1>We've got you covered</h1>
+          <h1>Recipe Index</h1>
           <div className="heading-underline"></div>
         </div>
       </div>
@@ -33,7 +33,7 @@ const RecipeIndex = () => {
                       blurDataURL={recipe.image + "/tr:bl-10"}
                       className="image-hover-scale"
                     />
-                    <div className="w absolute top-1/2 left-1/2 max-w-max -translate-y-1/2 -translate-x-1/2 rounded-xl bg-black bg-opacity-70 p-5 text-2xl font-bold uppercase tracking-wide text-white shadow-2xl">
+                    <div className="absolute top-1/2 left-1/2 max-w-max -translate-y-1/2 -translate-x-1/2 rounded-xl bg-black bg-opacity-70 p-5 text-2xl font-bold uppercase tracking-wide text-white shadow-2xl">
                       {recipe.mealType == "All"
                         ? recipe.mealType + " Recipes"
                         : recipe.mealType}

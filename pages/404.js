@@ -6,23 +6,23 @@ import NotFound from "@/components/common/NotFound";
 import Navbar from "@/components/common/Navbar";
 import PageNotFoundHeadLayout from "@/components/layout/head/PageNotFoundHeadLayout";
 
-const PageNotFound = ({ recipe }) => {
+const PageNotFound = () => {
   return (
     <PageNotFoundHeadLayout>
       <Navbar />
-      <NotFound recipe={recipe} />
+      <NotFound />
     </PageNotFoundHeadLayout>
   );
 };
 
-export const getStaticProps = async () => {
-  const res = await axios.get(`${process.env.API_URL}/recipe/random`);
+// export const getStaticProps = async () => {
+//   const res = await axios.get(`${process.env.API_URL}/recipe/random`);
 
-  return {
-    props: {
-      recipe: res.data,
-    },
-  };
-};
+//   return {
+//     props: {
+//       recipe: res.data,
+//     },
+//   };
+// };
 
 export default PageNotFound;

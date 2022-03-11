@@ -25,12 +25,6 @@ export default function Home({ posts }) {
 export const getStaticProps = async () => {
   const res = await axios.get(`${process.env.API_URL}/recipes/all`);
 
-  if (res.data.length === 0) {
-    return {
-      notFound: true,
-    };
-  }
-
   return {
     props: {
       posts: res.data,

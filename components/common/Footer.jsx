@@ -56,7 +56,7 @@ const Footer = () => {
               <Link href="/recipes/dinner">
                 <a className="hover-link text-lg font-bold">Dinner</a>
               </Link>
-              <Link href="/recipes/dessert">
+              <Link href="/recipes/desserts">
                 <a className="hover-link text-lg font-bold">Dessert</a>
               </Link>
             </div>

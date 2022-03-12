@@ -33,6 +33,12 @@ const RecipesByType = ({ mealType, tagType }) => {
     setLoading,
   } = recipeContext;
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.scroll({ top: 1, left: 1, behavior: "smooth" });
+    }
+  }, []);
+
   const handleChange = (e) => {
     if (tagType == "primary")
       searchRecipesByPrimaryTag(mealType.toLowerCase(), e.target.value);

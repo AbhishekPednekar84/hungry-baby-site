@@ -30,12 +30,12 @@ const NotFound = () => {
         <div className="absolute flex h-screen w-screen flex-col items-center justify-center">
           <div className="rounded-xl bg-white bg-opacity-50 p-4 md:p-10">
             <h1 className="md:text-center">Recipe not found!</h1>
-            <p className="my-2 text-2xl font-semibold md:my-5 md:text-center">
+            <p className="my-5 text-2xl font-semibold  md:text-center">
               You've stumbled upon an empty dish
             </p>
 
             <div className="z-10">
-              <p className="mb-2">A recipe you might be interested in?</p>
+              <p className="mb-5">Here's a recipe you might find interesting</p>
 
               <Link href={`/recipe/${recipe.slug}`}>
                 <a className="cursor-pointer overflow-hidden">

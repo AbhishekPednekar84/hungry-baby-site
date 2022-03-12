@@ -45,8 +45,8 @@ export const clockIcon = (
 
 export const basketIcon = (
   <svg
-    width="27"
-    height="24"
+    width="20"
+    height="17"
     viewBox="0 0 47 44"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ export const searchIcon = (
 
 export const chevronRightIcon = (
   <svg
-    className="h-10 w-10"
+    className="h-6 w-6"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -142,7 +142,7 @@ export const chevronRightIcon = (
 
 export const printIcon = (
   <svg
-    className="h-10 w-10 stroke-brandColor"
+    className="h-6 w-6 stroke-brandColor"
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -186,5 +186,16 @@ export const heartIcon = (
       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
       clip-rule="evenodd"
     ></path>
+  </svg>
+);
+
+export const notesIcon = (
+  <svg
+    class="h-6 w-6 text-brandColor"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
   </svg>
 );

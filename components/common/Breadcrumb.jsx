@@ -9,12 +9,12 @@ const variants = {
 
 const Breadcrumb = ({ primaryTag }) => {
   return (
-    <div className="flex items-center justify-start pt-32 pb-12 print:hidden">
+    <div className="flex items-center justify-center pt-32 pb-12 print:hidden">
       <Link href="/">
         <motion.a
           variants={variants}
           whileTap="tap"
-          className="cursor-pointer rounded-md bg-brandColor p-2 text-sm font-semibold uppercase text-white hover:bg-pink-800"
+          className="cursor-pointer rounded-md  p-2 text-sm font-semibold uppercase hover:bg-brandColor hover:text-white"
         >
           Home
         </motion.a>
@@ -26,7 +26,7 @@ const Breadcrumb = ({ primaryTag }) => {
         <motion.a
           variants={variants}
           whileTap="tap"
-          className="cursor-pointer rounded-md bg-brandColor p-2 text-sm font-semibold uppercase text-white hover:bg-pink-800"
+          className="cursor-pointer rounded-md p-2 text-sm font-semibold uppercase hover:bg-brandColor hover:text-white"
         >
           {primaryTag}
         </motion.a>

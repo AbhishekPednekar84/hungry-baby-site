@@ -11,13 +11,13 @@ import { printIcon } from "@/utils/svgs";
 
 const SocialShare = ({ title, featuredImage, excerpt }) => {
   return (
-    <div className="mb-7 flex gap-4 print:hidden">
+    <div className="my-7 flex gap-4 print:hidden">
       <WhatsappShareButton
         url={typeof window !== "undefined" && window.location.href}
         title={`Check out this awesome recipe from The Hungry Baby Blog - ${title}`}
         separator=" - "
       >
-        <WhatsappIcon size={48} round={true} />
+        <WhatsappIcon size={32} round={true} />
       </WhatsappShareButton>
 
       <TelegramShareButton
@@ -25,7 +25,7 @@ const SocialShare = ({ title, featuredImage, excerpt }) => {
         title={`Check out this awesome recipe from The Hungry Baby Blog - ${title}`}
         separator=" - "
       >
-        <TelegramIcon size={48} round={true} />
+        <TelegramIcon size={32} round={true} />
       </TelegramShareButton>
 
       <PinterestShareButton
@@ -33,11 +33,11 @@ const SocialShare = ({ title, featuredImage, excerpt }) => {
         media={featuredImage}
         description={`${title} - ${excerpt}`}
       >
-        <PinterestIcon size={48} round={true} />
+        <PinterestIcon size={32} round={true} />
       </PinterestShareButton>
 
       <div
-        className="flex h-12 w-12 cursor-pointer items-center justify-center rounded-full border-2 border-pink-900"
+        className="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full border-2 border-pink-900"
         onClick={() => window.print()}
       >
         {printIcon}

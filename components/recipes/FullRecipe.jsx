@@ -1,6 +1,12 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
-import { quotesIcon, clockIcon, basketIcon, chefHatIcon } from "@/utils/svgs";
+import {
+  quotesIcon,
+  clockIcon,
+  basketIcon,
+  chefHatIcon,
+  notesIcon,
+} from "@/utils/svgs";
 
 // Component imports
 import NutritionalValue from "./NutritionalValue";
@@ -29,7 +35,7 @@ const FullRecipe = ({ recipe }) => {
             {recipe.title}
           </h1>
 
-          <div className="relative mb-5">
+          <div className="relative mb-5 print:hidden">
             <span className="absolute -top-4 -left-3 -z-10">{quotesIcon}</span>
             <p
               itemProp="description"
@@ -47,10 +53,10 @@ const FullRecipe = ({ recipe }) => {
             />
           </div>
 
-          <div className="flex flex-col justify-between md:flex-row">
+          <div className="flex flex-col justify-between print:hidden md:flex-row">
             <div
               itemProp="image"
-              className="relative h-[300px] w-full overflow-hidden rounded-xl md:w-2/3"
+              className="relative h-[400px] w-full overflow-hidden rounded-xl md:w-2/3"
             >
               <Image
                 src={recipe.featured_image}
@@ -93,19 +99,19 @@ const FullRecipe = ({ recipe }) => {
             </div>
           </div>
 
-          <hr className="my-10 mx-10 border-2 border-brandColor" />
+          <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
-          <div>
+          <div className="print:mb-10">
             <h2 className="mb-5">Ingredients</h2>
 
-            <ul className="print:grid print:grid-cols-5 print:gap-2">
+            <ul>
               {recipe.ingredients.map((ingredient, index) => (
-                <li key={index} className="flex items-center py-2.5">
+                <li
+                  key={index}
+                  className="flex items-center py-2.5 print:py-1.5"
+                >
                   <span className="mr-2">{basketIcon}</span>
-                  <span
-                    itemProp="recipeIngredient"
-                    className="text-xl font-semibold"
-                  >
+                  <span itemProp="recipeIngredient" className="font-semibold">
                     {ingredient}
                   </span>
                 </li>
@@ -113,7 +119,7 @@ const FullRecipe = ({ recipe }) => {
             </ul>
           </div>
 
-          <hr className="my-10 mx-10 border-2 border-brandColor" />
+          <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
           <div>
             <h2 className="mb-5">Directions</h2>
@@ -131,7 +137,7 @@ const FullRecipe = ({ recipe }) => {
             </div>
           </div>
 
-          {recipe.notes && (
+          {/* {recipe.notes && (
             <div className="print:hidden">
               <hr className="my-10 mx-10 border-2 border-brandColor" />
               <div>
@@ -140,12 +146,31 @@ const FullRecipe = ({ recipe }) => {
                 <p>{recipe.notes}</p>
               </div>
             </div>
-          )}
+          )} */}
 
           <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
+          {recipe.notes && (
+            <div className="print:hidden">
+              <h2 className="mb-5">Notes</h2>
+
+              <div>
+                {recipe.notes.map((note, index) => (
+                  <div key={index} className="mb-3 inline-flex items-center">
+                    <span className="mr-2">{notesIcon}</span>
+
+                    <p>{note}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
           {recipe.nutritional_value && (
-            <NutritionalValue nutritionalValue={recipe.nutritional_value} />
+            <div className="print:hidden">
+              <hr className="my-10 mx-10 border-2 border-brandColor" />
+              <NutritionalValue nutritionalValue={recipe.nutritional_value} />
+            </div>
           )}
         </article>
       </div>

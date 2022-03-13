@@ -56,7 +56,7 @@ const FullRecipe = ({ recipe }) => {
           <div className="flex flex-col justify-between print:hidden md:flex-row">
             <div
               itemProp="image"
-              className="relative h-[400px] w-full overflow-hidden rounded-xl md:w-2/3"
+              className="relative h-[450px] w-full overflow-hidden rounded-xl md:w-2/3"
             >
               <Image
                 src={recipe.featured_image}
@@ -72,7 +72,7 @@ const FullRecipe = ({ recipe }) => {
             <div className="relative mt-5 min-w-[150px] rounded-xl border-2 border-brandColor md:mt-0">
               <span className="absolute -top-5 -right-4">{clockIcon}</span>
               <ul className="flex h-20 flex-row items-center justify-around px-2 md:h-full md:flex-col md:justify-center">
-                <li className="py-2 text-sm md:py-3 md:text-lg">
+                <li className="py-2 text-sm md:py-6 md:text-lg ">
                   <span className="font-bold">Prep</span>:{" "}
                   <meta
                     itemProp="prepTime"
@@ -81,7 +81,7 @@ const FullRecipe = ({ recipe }) => {
                   <time dateTime={ISOPrepDuration}>{recipe.prep_time}</time>{" "}
                   mins
                 </li>
-                <li className="py-2 text-sm md:py-3 md:text-lg">
+                <li className="py-2 text-sm md:py-6 md:text-lg ">
                   <span className="font-bold">Cook</span>:
                   <meta
                     itemProp="cookTime"
@@ -90,7 +90,7 @@ const FullRecipe = ({ recipe }) => {
                   <time dateTime={ISOCookDuration}>{recipe.cook_time}</time>{" "}
                   mins
                 </li>
-                <li className="py-2 text-sm md:py-3 md:text-lg">
+                <li className="py-2 text-sm md:py-6 md:text-lg ">
                   <span className="font-bold">Total</span>:{" "}
                   <time dateTime={ISOTotalDuration}>{recipe.total_time}</time>{" "}
                   mins

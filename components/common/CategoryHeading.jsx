@@ -2,6 +2,10 @@ import React from "react";
 
 const CategoryHeading = ({ heading }) => {
   const formattedHeading = (mainHeading) => {
+    if (mainHeading === "all") {
+      mainHeading = mainHeading + " Recipes";
+    }
+
     return (
       mainHeading.split("")[0].toUpperCase() +
       mainHeading.split("").join("").slice(1)

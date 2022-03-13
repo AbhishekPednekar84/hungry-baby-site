@@ -98,10 +98,10 @@ const About = () => {
               <div className="mt-10 px-10 py-10 lg:px-52">
                 <h2 className="mb-5 font-bold">Keeping things natural</h2>
                 <p className="text-lg">
-                  Some of the recipes on this blog will resonate with someone
-                  familiar with Indian cuisine. But there will be a good amount
-                  of content for you to try, irrespective of where you are
-                  present geographically. The ingredients we use are in line
+                  Some of the recipes on this blog will resonate better with
+                  someone familiar with Indian cuisine. But there will be a good
+                  amount of content for you to try, irrespective of where you
+                  are present geographically. The ingredients we use are in line
                   with our child’s age. So presently, this means fewer bottled
                   or canned items and more natural ingredients. That not only
                   keeps the meal healthy but helps us keep our budget in check.
@@ -116,10 +116,10 @@ const About = () => {
                   <p className="text-lg">
                     We minimize or avoid added sugar to the extent possible but
                     do not stress over it. The cakes or cookies we bake with
-                    fruits as sweetening agents taste great. However, the
-                    occasional modest drizzle of sugar, jaggery, honey or maple
-                    syrup is ok. Desserts are also a type of food that children
-                    must enjoy without guilt.
+                    fruits or dates as sweetening agents taste great. However,
+                    the occasional modest drizzle of sugar, jaggery, honey or
+                    maple syrup is ok. Desserts are also a type of food that
+                    children must enjoy without guilt.
                   </p>
                 </Tilt>
               </div>

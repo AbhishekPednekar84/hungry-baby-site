@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { generateRSSFeed } from "@/utils/rss";
 
 // Component imports
 import Landing from "@/components/home/Landing";
@@ -24,6 +25,8 @@ export default function Home({ posts }) {
 
 export const getStaticProps = async () => {
   const res = await axios.get(`${process.env.API_URL}/recipes/all`);
+
+  if (res.status === 200) generateRSSFeed(res.data);
 
   return {
     props: {

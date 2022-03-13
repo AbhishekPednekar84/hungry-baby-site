@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { heartIcon } from "@/utils/svgs";
+import { heartIcon, rssIcon } from "@/utils/svgs";
 
 const Footer = () => {
   return (
@@ -66,9 +66,19 @@ const Footer = () => {
             <h3 className="mb-7 text-center text-3xl font-extrabold">
               Quick Links
             </h3>
-            <div className="grid grid-cols-1 place-items-center gap-x-10 gap-y-7">
+            <div className="grid grid-cols-2 place-items-center gap-x-10 gap-y-7">
               <Link href="/about">
                 <a className="hover-link text-lg font-bold">Team HuBB</a>
+              </Link>
+
+              <Link href="/rss.xml">
+                <a
+                  aria-label="Link to the RSS feed"
+                  className="hover-link flex items-center text-lg font-bold"
+                >
+                  <span className="mr-1">RSS</span>
+                  {rssIcon}
+                </a>
               </Link>
             </div>
           </div>

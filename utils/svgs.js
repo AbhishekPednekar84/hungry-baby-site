@@ -75,18 +75,16 @@ export const chefHatIcon = (
 
 export const menuIcon = (
   <svg
-    className="h-10 w-10"
-    fill="none"
-    stroke="currentColor"
+    aria-hidden="true"
+    className="h-8 w-8"
+    role="img"
+    preserveAspectRatio="xMidYMid meet"
     viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M4 8h16M4 16h16"
-    ></path>
+      fill="#DB2777"
+      d="M22 13c0 1.11-.89 2-2 2H4a2 2 0 1 1 0-4h9l2.5 2l2.5-2h2a2 2 0 0 1 2 2M12 3C3 3 3 9 3 9h18s0-6-9-6M3 18c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3v-1H3v1Z"
+    />
   </svg>
 );
 
@@ -176,7 +174,7 @@ export const arrowUpIcon = (
 
 export const heartIcon = (
   <svg
-    class="h-6 w-6"
+    className="h-6 w-6"
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +182,7 @@ export const heartIcon = (
     <path
       fill-rule="evenodd"
       d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-      clip-rule="evenodd"
+      clipRule="evenodd"
     ></path>
   </svg>
 );
@@ -197,5 +195,17 @@ export const notesIcon = (
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path>
+  </svg>
+);
+
+export const rssIcon = (
+  <svg
+    className="h-6 w-6"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+    <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
   </svg>
 );

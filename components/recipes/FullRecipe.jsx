@@ -58,6 +58,7 @@ const FullRecipe = ({ recipe }) => {
               itemProp="image"
               className="relative h-[450px] w-full overflow-hidden rounded-xl md:w-2/3"
             >
+              <meta itemProp="image" content={recipe.featured_image}></meta>
               <Image
                 src={recipe.featured_image}
                 alt={`Image for ${recipe.title}`}

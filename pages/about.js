@@ -4,12 +4,17 @@ import Image from "next/image";
 // Component imports
 import Layout from "@/components/layout/Layout";
 import Tilt from "@/components/style/Tilt";
+import AboutPageHeadLAyout from "@/components/layout/head/AboutPageHeadLayout";
 
 const About = () => {
   return (
-    <div>
+    <AboutPageHeadLAyout>
       <Layout>
-        <div className="py-36">
+        <div
+          itemScope
+          itemType="https://schema.org/AboutPage"
+          className="py-36"
+        >
           <div className="heading-container">
             <div className="max-w-max">
               <h1 className="pb-2 text-center text-5xl">Team HuBB</h1>
@@ -171,7 +176,7 @@ const About = () => {
           </div>
         </div>
       </Layout>
-    </div>
+    </AboutPageHeadLAyout>
   );
 };
 

@@ -91,6 +91,10 @@ const FullRecipe = ({ recipe }) => {
                   mins
                 </li>
                 <li className="py-2 text-sm md:py-6 md:text-lg ">
+                  <meta
+                    itemProp="totalTime"
+                    content={`PT${recipe.total_time}M`}
+                  ></meta>{" "}
                   <span className="font-bold">Total</span>:{" "}
                   <time dateTime={ISOTotalDuration}>{recipe.total_time}</time>{" "}
                   mins
@@ -111,7 +115,7 @@ const FullRecipe = ({ recipe }) => {
                   className="flex items-center py-2.5 print:py-1.5"
                 >
                   <span className="mr-2">{basketIcon}</span>
-                  <span itemProp="recipeIngredient" className="font-semibold">
+                  <span itemProp="ingredients" className="font-semibold">
                     {ingredient}
                   </span>
                 </li>

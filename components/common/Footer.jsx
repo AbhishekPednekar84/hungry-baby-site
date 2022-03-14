@@ -35,7 +35,7 @@ const Footer = () => {
           reserved
         </p>
 
-        <div className="mt-12 flex flex-col items-center justify-center gap-y-16 lg:w-[600px] lg:flex-row lg:items-start lg:justify-between lg:gap-16">
+        <div className="mt-12 flex flex-col items-center justify-center gap-y-16 lg:w-[960px] lg:flex-row lg:items-start lg:justify-between lg:gap-16">
           <div>
             <h3 className="mb-7 text-center text-3xl font-extrabold">
               Recipes
@@ -82,11 +82,29 @@ const Footer = () => {
               </Link>
             </div>
           </div>
+
+          <div>
+            <h3 className="mb-7 text-center text-3xl font-extrabold">
+              Let's Get Social
+            </h3>
+            <div className="grid grid-cols-1 place-items-center gap-x-10 gap-y-7">
+              <Link href="https://pin.it/5JgQBsu" passHref={true}>
+                <a target="_blank" className="hover-link text-lg font-bold">
+                  <Image
+                    src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/pinterest-1_W5nSHgjxu.svg"
+                    alt="Link to our Pinterest board"
+                    height={50}
+                    width={50}
+                  />
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
         <p className="mt-12 flex items-center text-lg font-semibold">
           Made with{" "}
           <svg
-            class="mx-0.5 h-6 w-6"
+            className="mx-0.5 h-6 w-6"
             fill="#DB2777"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"

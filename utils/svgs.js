@@ -189,7 +189,7 @@ export const heartIcon = (
 
 export const notesIcon = (
   <svg
-    class="h-6 w-6 text-brandColor"
+    className="h-6 w-6 text-brandColor"
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"

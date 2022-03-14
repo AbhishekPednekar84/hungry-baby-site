@@ -109,16 +109,15 @@ const FullRecipe = ({ recipe }) => {
           <div className="print:mb-10">
             <h2 className="mb-5">Ingredients</h2>
 
-            <ul>
+            <ul aria-label="List of ingredients">
               {recipe.ingredients.map((ingredient, index) => (
                 <li
+                  itemProp="ingredients"
                   key={index}
                   className="flex items-center py-2.5 print:py-1.5"
                 >
                   <span className="mr-2">{basketIcon}</span>
-                  <span itemProp="ingredients" className="font-semibold">
-                    {ingredient}
-                  </span>
+                  <span className="font-semibold">{ingredient}</span>
                 </li>
               ))}
             </ul>

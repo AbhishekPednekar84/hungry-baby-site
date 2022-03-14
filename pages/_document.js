@@ -19,7 +19,9 @@ class MyDocument extends Document {
                       function gtag(){dataLayer.push(arguments);}
                       gtag('js', new Date());
 
-                      gtag('config', ${process.env.GA_TRACKING_ID});`,
+                      gtag('config', ${
+                        "'" + process.env.GA_TRACKING_ID + "'"
+                      });`,
             }}
           />
         </Head>

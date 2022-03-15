@@ -10,14 +10,14 @@ const ServerErrorHeadLayout = (props) => {
         <title>Houston, we have a problem!</title>
         <meta
           name="description"
-          content="Yummy recipes for toddlers and up. Make mealtime fun with our healthy and yummy recipes. Breakfast, lunch, dinner or snacks, we've got you covered. A new recipe will be posted every week."
+          content="Recipe ideas for toddlers and beyond. Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are."
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Yummy Recipes for Toddlers" />
         <meta
           property="og:description"
-          content="Yummy recipes for toddlers and up. Make mealtime fun with our healthy and yummy recipes. Breakfast, lunch, dinner or snacks, we've got you covered. A new recipe will be posted every week."
+          content="Recipe ideas for toddlers and beyond. Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are."
         />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />

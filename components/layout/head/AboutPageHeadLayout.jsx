@@ -56,7 +56,7 @@ const HomeHeadLayout = (props) => {
                 "dateCreated": "22-02-2022",
                 "url": "https://hungrybabyblog.com",
                 "description":
-                  "Meal ideas for toddlers and beyond. Make mealtime fun with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. While a lot of the posts focus on Indian recipes for toddlers, you will also find a whole bunch of easy and fun meal ideas that you can try no matter where you are.",
+                  "Meal ideas for toddlers and beyond. Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are.",
                 "genre": "Blog",
                 "keywords":
                   "meal ideas of toddlers, indian meal ideas for toddlers, meal idea for pre-schoolers"

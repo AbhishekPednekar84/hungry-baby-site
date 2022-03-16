@@ -3,6 +3,7 @@ import RecipeContext from "@/context/recipeContext";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import debounce from "lodash.debounce";
+import { searchIcon } from "@/utils/svgs";
 
 // Component imports
 import RecipeCard from "./RecipeCard";
@@ -78,12 +79,15 @@ const RecipesByType = ({ mealType, tagType }) => {
   return (
     <div className="mb-20">
       <div className="mb-16 flex w-full justify-center">
-        <input
-          type="text"
-          onChange={handleChange}
-          placeholder={`Search ${mealType} recipes`}
-          className="remove-default-focus w-[250px] border-b-2 border-b-pink-600 py-2 placeholder-pink-400"
-        />
+        <div className="flex items-center gap-2">
+          {searchIcon}
+          <input
+            type="text"
+            onChange={handleChange}
+            placeholder={`Search recipes`}
+            className="remove-default-focus w-[275px] border-b-2 border-b-pink-600 py-2 text-xl placeholder-pink-700 md:w-[400px]"
+          />
+        </div>
       </div>
 
       {loadedRecipes && loadedRecipes.length === 0 && (

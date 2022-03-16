@@ -67,7 +67,7 @@ html {
     @apply h-2 w-14 rounded-md bg-brandColor;
   }
   .nav-link {
-    @apply max-w-max cursor-pointer text-lg font-bold uppercase tracking-wide text-brandColor decoration-brandColor decoration-2 underline-offset-8 hover:underline;
+    @apply max-w-max cursor-pointer text-lg font-bold uppercase tracking-wide text-pink-800 decoration-pink-800 decoration-2 underline-offset-8 hover:underline hover:transition-all hover:duration-200 lg:text-xl lg:font-extrabold;
   }
   .image-hover-scale {
     @apply transition duration-200 ease-in-out hover:scale-105;

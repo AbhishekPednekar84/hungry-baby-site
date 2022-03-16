@@ -36,7 +36,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className="absolute z-50 w-full print:hidden">
+    <nav className="absolute left-0 right-0 z-50 w-full print:hidden lg:mx-auto lg:w-[950px] lg:pt-4">
       <div className="flex items-center justify-between">
         <div>
           <Link href="/">
@@ -45,7 +45,7 @@ const Navbar = () => {
                 variants={variants}
                 initial="initial"
                 animate="animate"
-                className="absolute top-2 left-2"
+                className="absolute top-2 left-2 lg:top-5"
               >
                 <Image
                   src="https://ik.imagekit.io/ykidmzssaww/Hungry-Baby/site-images/Logo_UUDYpbJVV.svg"

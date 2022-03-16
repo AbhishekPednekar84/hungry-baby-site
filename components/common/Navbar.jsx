@@ -7,6 +7,7 @@ import { menuIcon, cancelIcon } from "@/utils/svgs";
 
 // Component imports
 import Backdrop from "./Backdrop";
+import SocialChannels from "./SocialChannels";
 
 const variants = {
   initial: {
@@ -275,6 +276,9 @@ const Navbar = () => {
                     </li>
                   </>
                 )} */}
+                <div className="pt-20">
+                  <SocialChannels iconSize={50} />
+                </div>
               </ul>
             </motion.div>
           </Backdrop>

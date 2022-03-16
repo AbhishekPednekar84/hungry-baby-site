@@ -14,7 +14,7 @@ const Breadcrumb = ({ primaryTag }) => {
         <motion.a
           variants={variants}
           whileTap="tap"
-          className="cursor-pointer rounded-md  p-2 text-sm font-semibold uppercase hover:bg-brandColor hover:text-white"
+          className="cursor-pointer rounded-md  p-2 text-sm font-semibold uppercase transition-all duration-300 hover:bg-brandColor hover:text-white"
         >
           Home
         </motion.a>

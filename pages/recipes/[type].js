@@ -4,7 +4,7 @@ import recipeIndex from "@/utils/recipeIndex";
 // Component imports
 import RecipesByType from "@/components/recipes/RecipesByType";
 import CategoryHeading from "@/components/common/CategoryHeading";
-import Navbar from "@/components/common/Navbar";
+import BackToIndex from "@/components/recipes/BackToIndex";
 import MealTypeHeadLayout from "@/components/layout/head/MealTypeHeadLayout";
 import Layout from "@/components/layout/Layout";
 
@@ -12,6 +12,7 @@ const RecipeType = ({ mealType }) => {
   return (
     <MealTypeHeadLayout mealType={mealType}>
       <Layout>
+        <BackToIndex />
         <CategoryHeading heading={mealType} />
         <RecipesByType mealType={mealType} tagType="secondary" />
       </Layout>

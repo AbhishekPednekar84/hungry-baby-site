@@ -118,11 +118,11 @@ const CommonHeadLayout = () => {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:description"
-        content="Yummy recipes for toddlers and up. Make mealtime fun with our healthy and yummy recipes. Breakfast, lunch, dinner or snacks, we've got you covered. A new recipe will be posted every week."
+        content="Recipe ideas for toddlers and beyond. Make mealtime fun with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert recipe ideas for your child. While a lot of the posts focus on Indian recipes for toddlers, you will also find a whole bunch of easy and fun meal ideas that you can try no matter where you are."
       />
       <meta
         name="twitter:title"
-        content="Recipes for a nutritious, filling and fun meal for your child"
+        content="Recipes Ideas for Toddlers & Beyond"
       />
       <meta
         name="twitter:image"

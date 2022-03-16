@@ -5,7 +5,7 @@ import { heartIcon, rssIcon } from "@/utils/svgs";
 
 const Footer = () => {
   return (
-    <div className="relative bg-gradient-to-b from-pink-50 via-pink-100 to-pink-300 pb-20 print:hidden">
+    <div className="relative bg-gradient-to-b from-pink-50 via-pink-100 to-pink-300 pb-14 print:hidden">
       <div className="footer-curve">
         <svg
           data-name="Layer 1"

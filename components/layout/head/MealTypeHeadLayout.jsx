@@ -6,16 +6,24 @@ import CommonHeadLayout from "./CommonHeadLayout";
 
 const MealTypeHeadLayout = ({ children, mealType }) => {
   const formattedString = (word) => {
+    if (word === "snacks") word = "snack";
+
+    if (word === "desserts") word = "dessert";
+
     return word.split("")[0].toUpperCase() + word.split("").join("").slice(1);
   };
+
+  const titleText = "Recipes for Toddlers and Beyond";
 
   return (
     <Fragment>
       <CommonHeadLayout />
       <Head>
-        <title>{`${formattedString(
-          mealType
-        )} Recipes for Toddlers and Beyond`}</title>
+        <title>
+          {mealType === "all"
+            ? titleText
+            : `${formattedString(mealType)} Recipes for Toddlers and Beyond`}
+        </title>
         <meta
           name="description"
           content={`${formattedString(
@@ -24,7 +32,14 @@ const MealTypeHeadLayout = ({ children, mealType }) => {
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Recipe Ideas for Toddlers" />
+        <meta
+          property="og:title"
+          content={
+            mealType === "all"
+              ? titleText
+              : `${formattedString(mealType)} Recipes for Toddlers and Beyond`
+          }
+        />
         <meta
           property="og:description"
           content={`${formattedString(

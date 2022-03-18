@@ -10,7 +10,7 @@ const HomeHeadLayout = (props) => {
         <title>Recipe Ideas for Toddlers & Beyond</title>
         <meta
           name="description"
-          content="Meal ideas for toddlers and beyond. Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are."
+          content="Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are."
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />

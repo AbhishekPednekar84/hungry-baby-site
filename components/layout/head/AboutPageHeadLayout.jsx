@@ -7,7 +7,7 @@ const HomeHeadLayout = (props) => {
     <Fragment>
       <CommonHeadLayout />
       <Head>
-        <title>Hello From Team HuBB</title>
+        <title>Hello from Team HuBB</title>
         <meta
           name="description"
           content="Hey there, we are Aparna and Abhishek a.k.a Team HuBB

@@ -178,9 +178,10 @@ const FullRecipe = ({ recipe }) => {
             </div>
           )}
 
-          {recipe.plugged_product && (
+          {Object.keys(recipe.plugged_product).length !== 0 && (
             <div className="print:hidden">
               <hr className="border-brandColor my-10 mx-10 border-2" />
+
               <PluggedProducts pluggedProduct={recipe.plugged_product} />
             </div>
           )}

@@ -4,11 +4,21 @@ import Image from "next/image";
 // Component imports
 import Layout from "@/components/layout/Layout";
 import Tilt from "@/components/style/Tilt";
-import AboutPageHeadLAyout from "@/components/layout/head/AboutPageHeadLayout";
+import AboutPageHeadLayout from "@/components/layout/head/AboutPageHeadLayout";
 
 const About = () => {
+  const monthDiff = (dateFrom, dateTo) => {
+    return (
+      dateTo.getMonth() -
+      dateFrom.getMonth() +
+      12 * (dateTo.getFullYear() - dateFrom.getFullYear())
+    );
+  };
+
+  const d = new Date();
+
   return (
-    <AboutPageHeadLAyout>
+    <AboutPageHeadLayout>
       <Layout>
         <div
           itemScope
@@ -43,9 +53,14 @@ const About = () => {
                     Hey there, we are Aparna and Abhishek a.k.a{" "}
                     <span className="font-bold text-brandColor">Team HuBB</span>
                     . We are IT professionals from Bangalore, proud parents of
-                    our 19-month-old darling daughter and creators of The Hungry
-                    Baby Blog (HuBB). We want to lead off by saying that we’re
-                    no experts or hold no formal degrees in child nutrition.
+                    our{" "}
+                    {monthDiff(
+                      new Date(2020, 6),
+                      new Date(d.getFullYear(), d.getMonth())
+                    )}
+                    -month-old darling daughter and creators of The Hungry Baby
+                    Blog (HuBB). We want to lead off by saying that we’re no
+                    experts or hold no formal degrees in child nutrition.
                     Whatever we know is through hours of reading articles or
                     watching videos created by individuals who are stalwarts in
                     this field. We vet and taste every recipe and post it only
@@ -176,7 +191,7 @@ const About = () => {
           </div>
         </div>
       </Layout>
-    </AboutPageHeadLAyout>
+    </AboutPageHeadLayout>
   );
 };
 

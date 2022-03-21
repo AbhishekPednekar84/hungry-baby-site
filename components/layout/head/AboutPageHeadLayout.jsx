@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Fragment } from "react";
 import CommonHeadLayout from "./CommonHeadLayout";
 
-const HomeHeadLayout = (props) => {
+const AboutPageHeadLayout = (props) => {
   return (
     <Fragment>
       <CommonHeadLayout />
@@ -86,4 +86,4 @@ const HomeHeadLayout = (props) => {
   );
 };
 
-export default HomeHeadLayout;
+export default AboutPageHeadLayout;

@@ -49,7 +49,10 @@ html {
 
 @layer components {
   .primary-button {
-    @apply cursor-pointer rounded-lg bg-brandColor text-xl font-bold uppercase text-white transition-colors duration-200 ease-in-out hover:bg-pink-800;
+    @apply cursor-pointer rounded-lg bg-brandColor text-base font-bold uppercase text-white transition-colors duration-200 ease-in-out hover:bg-pink-800 md:text-xl;
+  }
+  .secondary-button {
+    @apply cursor-pointer rounded-lg bg-purple-600 text-base font-bold uppercase text-white transition-colors duration-200 ease-in-out hover:bg-purple-800 md:text-xl;
   }
   .card-container {
     @apply m-auto mx-5 flex h-[600px] max-w-[100%] snap-x scroll-px-10 overflow-x-scroll bg-gradient-to-b from-zinc-100 via-slate-50 to-white py-0 px-[60px];

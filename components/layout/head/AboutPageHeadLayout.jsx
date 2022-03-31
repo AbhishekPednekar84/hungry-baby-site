@@ -7,7 +7,9 @@ const AboutPageHeadLayout = (props) => {
     <Fragment>
       <CommonHeadLayout />
       <Head>
-        <title>Hello from Team HuBB</title>
+        <title>
+          Hello from Team HuBB | The Genesis of The Hungry Baby Blog
+        </title>
         <meta
           name="description"
           content="Hey there, we are Aparna and Abhishek a.k.a Team HuBB
@@ -23,7 +25,10 @@ const AboutPageHeadLayout = (props) => {
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Hello From Team HuBB" />
+        <meta
+          property="og:title"
+          content="Hello From Team HuBB | The Genesis of The Hungry Baby Blog"
+        />
         <meta
           property="og:description"
           content="Hey there, we are Aparna and Abhishek a.k.a Team HuBB

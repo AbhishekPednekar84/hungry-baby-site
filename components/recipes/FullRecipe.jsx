@@ -71,7 +71,7 @@ const FullRecipe = ({ recipe }) => {
                 className="image-hover-scale"
               />
             </div>
-            <div className="border-brandColor relative mt-5 min-w-[150px] rounded-xl border-2 md:mt-0">
+            <div className="relative mt-5 min-w-[150px] rounded-xl border-2 border-brandColor md:mt-0">
               <span className="absolute -top-5 -right-4">{clockIcon}</span>
               <ul className="flex h-20 flex-row items-center justify-around px-2 md:h-full md:flex-col md:justify-center">
                 <li className="py-2 text-sm md:py-6 md:text-lg ">
@@ -105,7 +105,7 @@ const FullRecipe = ({ recipe }) => {
             </div>
           </div>
 
-          <hr className="border-brandColor my-10 mx-10 border-2 print:hidden" />
+          <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
           <div className="print:mb-10">
             <h2 className="mb-5">Ingredients</h2>
@@ -124,7 +124,7 @@ const FullRecipe = ({ recipe }) => {
             </ul>
           </div>
 
-          <hr className="border-brandColor my-10 mx-10 border-2 print:hidden" />
+          <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
 
           <div>
             <h2 className="mb-5">Directions</h2>
@@ -153,7 +153,9 @@ const FullRecipe = ({ recipe }) => {
             </div>
           )} */}
 
-          <hr className="border-brandColor my-10 mx-10 border-2 print:hidden" />
+          {recipe.notes && (
+            <hr className="my-10 mx-10 border-2 border-brandColor print:hidden" />
+          )}
 
           {recipe.notes && (
             <div className="print:hidden">
@@ -173,14 +175,14 @@ const FullRecipe = ({ recipe }) => {
 
           {recipe.nutritional_value && (
             <div className="print:hidden">
-              <hr className="border-brandColor my-10 mx-10 border-2" />
+              <hr className="my-10 mx-10 border-2 border-brandColor" />
               <NutritionalValue nutritionalValue={recipe.nutritional_value} />
             </div>
           )}
 
           {Object.keys(recipe.plugged_product).length !== 0 && (
             <div className="print:hidden">
-              <hr className="border-brandColor my-10 mx-10 border-2" />
+              <hr className="my-10 mx-10 border-2 border-brandColor" />
 
               <PluggedProducts pluggedProduct={recipe.plugged_product} />
             </div>

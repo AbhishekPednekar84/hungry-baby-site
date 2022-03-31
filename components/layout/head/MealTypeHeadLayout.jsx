@@ -62,11 +62,7 @@ const MealTypeHeadLayout = ({ children, mealType }) => {
                 "url": "https://hungrybabyblog.com",
                 "description":
                 "Make ${mealType} fun and stress-free with our easy, healthy and delicious recipes. Explore ${mealType} options for your child. Get ideas for Indian ${mealType} recipes for toddlers and other fun meal ideas that you can try no matter where you are.",
-                "genre": "Blog",
-                "keywords":
-                  {${formattedString(
-                    mealType
-                  )} ideas of toddlers, indian meal ideas for toddlers, meal idea for pre-schoolers
+                "genre": "Blog"
               }
             ]`,
           }}

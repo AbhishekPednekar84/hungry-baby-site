@@ -34,7 +34,6 @@ const FullRecipeHeadLayout = ({ children, recipe }) => {
                 "cookTime": ${'"' + "PT" + recipe.cook_time + "M" + '"'},
                 "prepTime": ${'"' + "PT" + recipe.prep_time + "M" + '"'},
                 "recipeInstructions": ${'"' + recipe.procedure + '"'},
-                "keywords": ${'"' + recipe.tags + '"'},
                 "url": ${
                   '"' + "https://hungrybabyblog.com/recipe/" + recipe.slug + '"'
                 }

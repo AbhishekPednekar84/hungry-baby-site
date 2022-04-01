@@ -7,7 +7,7 @@ const HomeHeadLayout = (props) => {
     <Fragment>
       <CommonHeadLayout />
       <Head>
-        <title>Recipe Ideas for Toddlers & Beyond | The Hungry Baby Blog</title>
+        <title>Healthy Meal Ideas for Toddlers | The Hungry Baby Blog</title>
         <meta
           name="description"
           content="Are you stressed out looking for new recipe ideas for your toddler? Try our healthy and easy to make recipes that you and your toddler can enjoy together."
@@ -16,7 +16,7 @@ const HomeHeadLayout = (props) => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Recipe Ideas for Toddlers | The Hungry Baby Blog"
+          content="Healthy Meal Ideas for Toddlers | The Hungry Baby Blog"
         />
         <meta
           property="og:description"

@@ -20,7 +20,7 @@ const Landing = () => {
           className="-z-10 rounded-lg"
         />
         <div className="flex h-screen items-center justify-center">
-          <header className="z-10 mx-3 rounded-lg bg-white bg-opacity-50 p-3 md:p-5 lg:w-[800px] lg:p-10">
+          <header className="z-10 mx-3 rounded-lg bg-white bg-opacity-60 p-3 md:bg-opacity-50 md:p-5 lg:w-[800px] lg:p-10">
             <h1 className="margin-0 font-black leading-tight sm:leading-snug">
               Easy recipe ideas for toddlers and beyond
             </h1>

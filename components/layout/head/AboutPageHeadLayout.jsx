@@ -12,16 +12,7 @@ const AboutPageHeadLayout = (props) => {
         </title>
         <meta
           name="description"
-          content="Hey there, we are Aparna and Abhishek a.k.a Team HuBB
-                    . We are IT professionals from Bangalore, proud parents of
-                    our 19-month-old darling daughter and creators of The Hungry
-                    Baby Blog (HuBB). We want to lead off by saying that we’re
-                    no experts or hold no formal degrees in child nutrition.
-                    Whatever we know is through hours of reading articles or
-                    watching videos created by individuals who are stalwarts in
-                    this field. We vet and taste every recipe and post it only
-                    after getting a sign off from an opinionated little expert
-                    taste tester."
+          content="Check out our easy to make and stress-free recipe ideas for toddlers and beyond. All the recipes are vetted by an expert little food critic :)"
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
@@ -31,16 +22,7 @@ const AboutPageHeadLayout = (props) => {
         />
         <meta
           property="og:description"
-          content="Hey there, we are Aparna and Abhishek a.k.a Team HuBB
-                    . We are IT professionals from Bangalore, proud parents of
-                    our 19-month-old darling daughter and creators of The Hungry
-                    Baby Blog (HuBB). We want to lead off by saying that we’re
-                    no experts or hold no formal degrees in child nutrition.
-                    Whatever we know is through hours of reading articles or
-                    watching videos created by individuals who are stalwarts in
-                    this field. We vet and taste every recipe and post it only
-                    after getting a sign off from an opinionated little expert
-                    taste tester."
+          content="Check out our easy to make and stress-free recipe ideas for toddlers and beyond. All the recipes are vetted by an expert little food critic :)"
         />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />

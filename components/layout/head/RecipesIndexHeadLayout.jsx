@@ -10,14 +10,14 @@ const RecipesIndexHeadLayout = (props) => {
         <title>Check out our recipe index</title>
         <meta
           name="description"
-          content="Meal ideas for toddlers and beyond. Make mealtime fun with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. While a lot of the posts focus on Indian recipes for toddlers, you will also find a whole bunch of easy and fun meal ideas that you can try no matter where you are."
+          content="Are you stressed out looking for new recipe ideas for your toddler? Try our healthy and easy to make recipes that you and your toddler can enjoy together."
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Check out our recipe index" />
         <meta
           property="og:description"
-          content="Meal ideas for toddlers and beyond. Make mealtime fun and stress-free with our easy, healthy and delicious recipes. Explore breakfast, lunch, dinner, snack or dessert ideas for your child. Get ideas for Indian recipes for toddlers and fun meal ideas that you can try no matter where you are."
+          content="Are you stressed out looking for new recipe ideas for your toddler? Try our healthy and easy to make recipes that you and your toddler can enjoy together."
         />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />

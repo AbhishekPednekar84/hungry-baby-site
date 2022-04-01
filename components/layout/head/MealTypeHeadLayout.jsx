@@ -26,7 +26,11 @@ const MealTypeHeadLayout = ({ children, mealType }) => {
         </title>
         <meta
           name="description"
-          content={`Make ${mealType} fun and stress-free with our easy, healthy and delicious recipes. Explore ${mealType} options for your child. Get ideas for Indian ${mealType} recipes for toddlers and other fun meal ideas that you can try no matter where you are.`}
+          content={`Are you stressed out looking for new ${formattedString(
+            mealType
+          )} recipe ideas for your toddler? Try our healthy and easy ${formattedString(
+            mealType
+          )} recipes for the entire family to enjoy.`}
         />
         <meta property="og:locale" content="en_IN" />
         <meta property="og:type" content="website" />
@@ -40,7 +44,11 @@ const MealTypeHeadLayout = ({ children, mealType }) => {
         />
         <meta
           property="og:description"
-          content={`Make ${mealType} fun and stress-free with our easy, healthy and delicious recipes. Explore ${mealType} options for your child. Get ideas for Indian ${mealType} recipes for toddlers and other fun meal ideas that you can try no matter where you are.`}
+          content={`Are you stressed out looking for new ${formattedString(
+            mealType
+          )} recipe ideas for your toddler? Try our healthy and easy ${formattedString(
+            mealType
+          )} recipes for the entire family to enjoy.`}
         />
         <meta property="og:url" content="https://hungrybabyblog.com" />
         <meta property="og:site_name" content="The Hungry Baby Blog" />

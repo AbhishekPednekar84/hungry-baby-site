@@ -39,4 +39,5 @@ export const generateRSSFeed = (articles) => {
   feed.addCategory("Food");
 
   fs.writeFileSync("public/rss.xml", feed.rss2());
+  fs.writeFileSync("public/atom.xml", feed.atom1());
 };

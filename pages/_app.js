@@ -21,6 +21,18 @@ function MyApp({ Component, pageProps, router }) {
     }
   }, []);
 
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.gtag("config", process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID, {
+        page_path: url,
+      });
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <motion.div
       key={router.route}
@@ -28,7 +40,7 @@ function MyApp({ Component, pageProps, router }) {
       initial="pageInitial"
       animate="pageAnimate"
     >
-      <Script
+      {/* <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_TRACKING_ID}`}
       />
@@ -42,7 +54,7 @@ function MyApp({ Component, pageProps, router }) {
               page_path: window.location.pathname,
             });
         `}
-      </Script>
+      </Script> */}
       <RecipeState>
         <Component {...pageProps} />
       </RecipeState>
